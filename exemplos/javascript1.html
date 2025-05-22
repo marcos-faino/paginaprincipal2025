@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro exemplo javascript</title>
+    <link href="../estilos/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Primeiro Exemplo Javascript</h1>
+    <p id="p1">Este é um paragrafo</p>
+    <button onclick="minhaFuncao()" ondblclick="voltarTexto()">Mudar parágrafo</button>
+    <script>
+        window.alert('Olá, Bem Vindo!');
+        document.write('Testando document write!');
+        console.log('escrevendo no console do navegador');
+
+        function minhaFuncao(){
+            document.getElementById('p1').innerHTML = "Texto alterado!";
+        }
+        function voltarTexto(){
+            document.querySelector('#p1').innerHTML = "Este é um paragrafo";
+        }
+    </script>
+</body>
+</html>
